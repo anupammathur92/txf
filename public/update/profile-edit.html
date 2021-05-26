@@ -1,0 +1,275 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=0" />
+    <meta name="csrf-token" content="">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="navbar navbar-expand flex-column flex-md-row align-items-center navbar-custom">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand mr-0 mr-md-2 logo">
+            <img src="images/logo.svg" alt="Logo">
+        </a>
+        <button type="button" class="navigation-btn"><i class="fal fa-bars"></i></button>
+        <ul class="navbar-nav flex-row ml-auto d-flex align-items-center list-unstyled topnav-menu mb-0">
+            <li class="d-none d-lg-block">
+                <form class="header-search-form">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <i class="fal fa-search icon"></i>
+                </form>
+            </li>
+            <li class="dropdown notification-list">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="false" aria-expanded="false">
+                    <i class="far fa-bell"></i>
+                    <span class="noti-icon-badge"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+                    <div class="dropdown-item noti-title border-bottom">
+                        <h5 class="m-0 font-size-16">
+                            <span class="float-right">
+                                <a href="" class="text-dark">
+                                    <small>Clear All</small>
+                                </a>
+                            </span>Notification
+                        </h5>
+                    </div>
+                    <div class="noti-scroll">
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="notify-icon btn btn-primary"><i class="far fa-user-plus"></i></div>
+                            <p class="notify-details">New user registered.<small class="text-muted">5 hours
+                                    ago</small>
+                            </p>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="notify-icon">
+                                <img src="images/avatar-1.jpg" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <p class="notify-details">Karen Robinson <small class="text-muted">Wow ! this admin
+                                    looks good and awesome design</small>
+                            </p>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="notify-icon">
+                                <img src="images/avatar-2.jpg" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <p class="notify-details">Cristina Pride <small class="text-muted">Hi, How are you? What
+                                    about our next meeting</small></p>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="notify-icon bg-success"><i class="uil uil-comment-message"></i> </div>
+                            <p class="notify-details">Jaclyn Brunswick commented on Dashboard<small
+                                    class="text-muted">1 min ago</small></p>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="notify-icon bg-danger"><i class="uil uil-comment-message"></i></div>
+                            <p class="notify-details">Caleb Flakelar commented on Admin<small class="text-muted">4
+                                    days ago</small></p>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="notify-icon bg-primary">
+                                <i class="uil uil-heart"></i>
+                            </div>
+                            <p class="notify-details">Carlos Crouch liked
+                                <b>Admin</b>
+                                <small class="text-muted">13 days ago</small>
+                            </p>
+                        </a>
+
+                    </div>
+
+                    <!-- All-->
+                    <a href="javascript:void(0);"
+                        class="dropdown-item align-items-center justify-content-center notify-item border-top">View
+                        all</a>
+                </div>
+            </li>
+            <li class="dropdown user-link">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="false" aria-expanded="false">
+                    <i class="far fa-cog"></i>
+                    <span class="noti-icon-badge"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+                    <a href="profile.html" class="dropdown-item"> <i class="fal fa-user"></i> My Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item"> <i class="fal fa-headset"></i> Support</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item"><i class="fal fa-sign-out"></i> Logout</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div> 
+<div class="dashboard-menu">
+    <div class="nav-menu">
+        <div class="user-info">
+            <div class="user-icon"><img src="images/avatar-1.jpg" alt="img"></div>
+            <div class="user-name">
+                <h5>John S</h5>
+                <span class="h6 text-muted">Administrator</span>
+            </div>
+        </div>
+        <ul class="list-unstyled nav">
+            <li class="nav-item"><span class="menu-title text-muted">NAVIGATION</span></li>
+            <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fal fa-home-alt"></i> Dashboard</a></li>
+            <li class="nav-item"><span class="menu-title text-muted">Components</span></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fal fa-file-alt"></i> Base </a>
+                <ul class="sub-menu">
+                    <li class="nav-item"><a href="breadcrumb.html" class="nav-link">Breadcrumb</a></li>
+                    <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                    <li class="nav-item"><a href="carousel.html" class="nav-link">Carousel</a></li>
+                    <li class="nav-item"><a href="collapse.html" class="nav-link">Collapse</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="listgroup.html" class="nav-link">List Group</a></li>
+                    <li class="nav-item"><a href="pagination.html" class="nav-link">Pagination</a></li>
+                    <li class="nav-item"><a href="popovers.html" class="nav-link">Popovers</a></li>
+                    <li class="nav-item"><a href="progress.html" class="nav-link">Progress</a></li>
+                    <li class="nav-item"><a href="switches.html" class="nav-link">Switches</a></li>
+                    <li class="nav-item"><a href="tabs.html" class="nav-link">Tabs</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fal fa-bell"></i> Notifications </a>
+                <ul class="sub-menu">
+                    <li class="nav-item"><a href="alerts.html" class="nav-link">Alerts</a></li>
+                    <li class="nav-item"><a href="badge.html" class="nav-link">Badge</a></li>
+                    <li class="nav-item"><a href="modals.html" class="nav-link">Modals</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><span class="menu-title text-muted">NAVIGATION</span></li>
+            <li class="nav-item"><a href="form.html" class="nav-link"><i class="fal fa-file-alt"></i> Forms</a></li>
+            <li class="nav-item"><a href="widgets.html" class="nav-link"><i class="fal fa-calculator-alt"></i> Widgets</a></li>
+            <li class="nav-item"><a href="tables.html" class="nav-link"><i class="fal fa-border-all"></i> Tables</a></li>
+            <li class="nav-item"><a href="user.html" class="nav-link"><i class="fal fa-users"></i> Users</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="page-title col-sm-12">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="h3 m-0">Edit Profile</h1>
+            </div>
+            <div class="col-md-6">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb m-0 p-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Profile Edit</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-lg-12 col-md-4 mb-4">
+                <form class="box bg-white" action="profile.html">
+                    <div class="box-row flex-wrap">
+                        <div class="profile-information mb-3">
+                            <div class="user-icon">
+                                <img src="images/avatar-1.jpg" alt="img">
+                                <div class="img-upload">
+                                    <input type="file" class="file" id="profile-img">
+                                    <label for="profile-img"><i class="fal fa-camera"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="John S" value="John S">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="example@gmail.com" value="example@gmail.com">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="example@gmail.com" value="+91 1234567890">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label>Address</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Jaipur">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label>City</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="India" value="India">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label>Country</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="India" value="India">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label>About</label>
+                                <div class="input-group">
+                                    <textarea class="form-control">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.                                        </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3 text-center">
+                            <button type="submit" class="btn btn-light">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-12 copyright">
+                <p>2015 - 2019 © demo theme by <a href="#">Arka Softwares</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
