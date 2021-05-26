@@ -50,7 +50,7 @@ return [
             'port' => '3306',//env('DB_PORT', '3306'),
             'database' => 'tixfair',//env('DB_DATABASE', 'tixfair'),
             'username' => 'root',//env('DB_USERNAME', 'root'),
-            'password' => '',//env('DB_PASSWORD', 'Tixfair#123'),
+            'password' => 'random@123',//env('DB_PASSWORD', 'Tixfair#123'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
